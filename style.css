@@ -1,6 +1,6 @@
 /* Global styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: Helvetica, sans-serif;
   background-color: #f4f4f9;
   margin: 0;
   padding: 0;
@@ -17,12 +17,12 @@ body {
 
 .product-title {
   text-align: center;
-  color: #2c3e50;
+  color: #006400;
 }
 
 .product-description {
   font-size: 16px;
-  color: #7f8c8d;
+  color: #006400;
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -34,7 +34,7 @@ body {
 
 .product-features li {
   font-size: 16px;
-  color: #34495e;
+  color: #006400;
   margin-bottom: 10px;
 }
 
