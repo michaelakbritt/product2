@@ -1,55 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Description</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-    }
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    header {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 1em 0;
-    }
+/* Body style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    height: 100vh;            /* Take full viewport height */
+    margin: 0;
+}
 
-    .container {
-      width: 80%;
-      max-width: 800px; /* Set the max-width for the description */
-      margin: 0 auto;
-      background-color: #fff;
-      padding: 20px;
-      margin-top: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
+/* Container style for the product description */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-    section {
-      margin-bottom: 20px;
-    }
+/* Title style */
+.product-title {
+    font-size: 2em;
+    margin-bottom: 16px;
+    color: #333;
+    text-align: center;
+}
 
-    h2 {
-      color: #333;
-    }
+/* Description style */
+.product-description {
+    font-size: 1.1em;
+    margin-bottom: 24px;
+    color: #666;
+    line-height: 1.6;
+}
 
-    ul {
-      list-style-type: disc;
-      margin-left: 20px;
-    }
+/* Feature list style */
+.product-features {
+    list-style-type: none; /* Remove the default bullet points */
+    padding-left: 0;       /* Remove the left padding */
+    margin-bottom: 24px;
+}
 
-    #buy-button {
-      background-color: #4caf50;
-      color: #fff;
-      padding: 10px 20px;
-      font-size: 16px;
-      border: none;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-    }
-  </style>
+.product-features li {
+    font-size: 1.1em;
+    margin: 8px 0;
+    color: #444;
+}
+
+/* Change bullet color */
+.product-features li::before {
+    content: "\2022";  /* Unicode for the bullet character */
+    color: #4caf50;    /* Set the bullet color */
+    font-size: 1.5em;   /* Size of the bullet */
+    margin-right: 10px; /* Space between the bullet and text */
+    vertical-align: middle; /* Align bullet and text properly */
+}
+
+/* Button style */
+.buy-now-button {
+    display: inline-block;
+    text-align: center;
+    padding: 12px 24px;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 4px;
+    width: 100%;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+.buy-now-button:hover {
+    background-color: #0056b3;
+}
